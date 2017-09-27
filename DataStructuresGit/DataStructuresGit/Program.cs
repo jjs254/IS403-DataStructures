@@ -10,6 +10,13 @@ namespace DataStructuresGit
     {
         static void Main(string[] args)
         {
+            //menue
+            Console.WriteLine("Stack\nQueue\nDictionary\nExit");
+
+            //pauses the program so user can view screen
+            Console.Read();
+
+
         }
     }
 }
