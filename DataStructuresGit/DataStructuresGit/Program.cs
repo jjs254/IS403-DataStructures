@@ -15,7 +15,7 @@ namespace DataStructuresGit
 
             //pauses the program so user can view screen
             Console.Read();
-
+            
 
         }
     }
