@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace DataStructuresGit
 {
-    class Program
+    class StackProcessor
     {
-        static void Main(string[] args)
+        private Stack<string> myStack;
+        public void addOneItem(string newEntry)
         {
-            
+
         }
     }
 }
