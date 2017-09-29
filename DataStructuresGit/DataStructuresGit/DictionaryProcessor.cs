@@ -21,12 +21,16 @@ namespace DataStructuresGit
             sw = new System.Diagnostics.Stopwatch();
         }
 
-        //Adds one item to the dictionary
+        //Adds one item to the dictionary. User will enter the key
         public void addOneItem(string newEntry)
         {
-            myDictionary.Add(newEntry, valueCounter);
-            valueCounter = valueCounter + 1;
-            Console.WriteLine("newEntry" + " was added to the dictionary");
+            if (myDictionary.ContainsKey(newEntry)) { Console.WriteLine("You cannot have multiple keys that are the same value."); }
+            else
+            {
+                myDictionary.Add(newEntry, valueCounter);
+                valueCounter = valueCounter + 1;
+                Console.WriteLine("newEntry" + " was added to the dictionary");
+            }
         }
 
         //Adds 2000 items to the dictionary
