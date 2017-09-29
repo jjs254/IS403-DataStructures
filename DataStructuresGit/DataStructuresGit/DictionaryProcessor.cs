@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 namespace DataStructuresGit
 {
     //Processes all operations related to a dictionary
-    class DictionaryProcessor
+    public class DictionaryProcessor
     {
         private Dictionary<string, int> myDictionary;
         private int valueCounter;
         private System.Diagnostics.Stopwatch sw; 
 
         //Constructor
-        private DictionaryProcessor()
+        public DictionaryProcessor()
         {
             myDictionary = new Dictionary<string, int>();
             valueCounter = 1;
@@ -29,7 +29,7 @@ namespace DataStructuresGit
             {
                 myDictionary.Add(newEntry, valueCounter);
                 valueCounter = valueCounter + 1;
-                Console.WriteLine("newEntry" + " was added to the dictionary");
+                Console.WriteLine(newEntry + " was added to the dictionary");
             }
         }
 

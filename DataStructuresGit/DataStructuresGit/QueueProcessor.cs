@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace DataStructuresGit
 {
-    class QueueProcessor
+    public class QueueProcessor
     {
         
         private Queue<string> myQueue;
         private System.Diagnostics.Stopwatch sw;
 
         //Default Constructor
-        private QueueProcessor()
+        public QueueProcessor()
         {
             myQueue = new Queue<string>();
             sw = new System.Diagnostics.Stopwatch();
@@ -59,7 +59,7 @@ namespace DataStructuresGit
             if(myQueue.Count() != 0)
             {
                 //iterate through queue and enqueue all items except inputted item
-                foreach (string entry in myQueue)
+                for (int i = 0; i < myQueue.Count(); i++)
                 {
                     tempString = myQueue.Dequeue();
                     if (tempString != item)
@@ -78,7 +78,7 @@ namespace DataStructuresGit
                 else
                 {
                     //Output if item is deleted and how many times it appeared
-                    string outputLine = "Deleted " + counter + " instance(s) of '" + item + "'";
+                    Console.WriteLine("Deleted " + counter + " instance(s) of '" + item + "'");
                 }
             }
             else

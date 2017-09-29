@@ -113,7 +113,7 @@ namespace DataStructuresGit
                         //subMenu
                         Console.Write("\n1. Add one time to Dictionary\n2. Add Huge List of Items to Dictionary\n3. Display Dictionary\n4. Delete from Dictionary\n5. Clear Dictionary\n6. Search Dictionary\n7. Return to Main Menu\n\n");
                         subSelect = Console.ReadLine();
-                        if (subSelect == "Add one time to Dictionary" | subSelect == "1")
+                        if (subSelect == "Add one item to Dictionary" | subSelect == "1")
                         {
                             Console.WriteLine("\nPlease enter one item to add\n");
                             dp.addOneItem(Console.ReadLine());

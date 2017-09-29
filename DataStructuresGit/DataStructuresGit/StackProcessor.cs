@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace DataStructuresGit
 {
-    class StackProcessor
+    public class StackProcessor
     {
         private Stack<string> myStack; //create stack
 
-        System.Diagnostics.Stopwatch sw; //create stopwatch
+        private System.Diagnostics.Stopwatch sw; //create stopwatch
 
-        private StackProcessor()//constructor
+        public StackProcessor()//constructor
         {
-            myStack = new Stack<string>();           
+            myStack = new Stack<string>();
+            sw = new System.Diagnostics.Stopwatch();
         }
 
         public void addOneItem(string newEntry)
@@ -67,11 +68,11 @@ namespace DataStructuresGit
             {
                 Stack<string> myOtherStack = new Stack<string>();//make other stack
                 int iCounter = 0;
-
-                foreach (string entry in myStack)
+                int counter = myStack.Count();
+                for (int i = 0; i < counter; i++)
                 {
 
-                    if (entry.Equals(item))
+                    if (myStack.Peek().Equals(item))
                     {
                         myStack.Pop();
                         iCounter++;
@@ -82,7 +83,7 @@ namespace DataStructuresGit
                     }
                 }
 
-                foreach(string entry in myOtherStack)//put back on myStack
+                for (int n = 0; n < myOtherStack.Count(); n++)//put back on myStack
                 {
                     myStack.Push(myOtherStack.Pop());
                 }
