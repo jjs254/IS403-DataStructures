@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace DataStructuresGit
 {
-    class StackProcessor
+    class DictionaryProcessor
     {
-        private Stack<string> myStack;
+        private Dictionary<string, int> myDictionary;
 
         public void addOneItem(string newEntry)
         {
-    
+
         }
 
         public void addHugeList()
@@ -39,6 +39,5 @@ namespace DataStructuresGit
         {
             return null;
         }
-
     }
 }

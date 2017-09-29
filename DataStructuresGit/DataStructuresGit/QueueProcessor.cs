@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace DataStructuresGit
 {
-    class StackProcessor
+    class QueueProcessor
     {
-        private Stack<string> myStack;
+        private Queue<string> myQueue;
 
         public void addOneItem(string newEntry)
         {
-    
+
         }
 
         public void addHugeList()
@@ -39,6 +39,5 @@ namespace DataStructuresGit
         {
             return null;
         }
-
     }
 }
