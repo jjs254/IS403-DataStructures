@@ -99,13 +99,14 @@ namespace DataStructuresGit
             {
                 int foundValue = myDictionary[item];
                 sw.Stop();
-                Console.WriteLine("Found!!  " + "Time: " + sw.Elapsed);
+                Console.WriteLine("Found!!  " + "Time elapsed: " + sw.Elapsed);
             }
             else //item is not in the dictionary
             {
                 sw.Stop();
-                Console.WriteLine("Not found!!" + "Time: " + sw.Elapsed);
+                Console.WriteLine("Not found!!" + "Time elapsed: " + sw.Elapsed);
             }
+            sw.Reset();
         }
     }
 }
