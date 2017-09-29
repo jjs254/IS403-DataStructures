@@ -7,9 +7,13 @@ I am testing to see if this will work.
 
 This is Bryce lets see if this will work.
 
+<<<<<<< HEAD
+Hey guys.
+=======
 
 Josh Test
 
 Josh Harris Test
 
 test push to master
+>>>>>>> master
