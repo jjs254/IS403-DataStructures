@@ -59,7 +59,8 @@ namespace DataStructuresGit
             if(myQueue.Count() != 0)
             {
                 //iterate through queue and enqueue all items except inputted item
-                for (int i = 0; i < myQueue.Count(); i++)
+                int icount = myQueue.Count();
+                for (int i = 0; i < icount; i++)
                 {
                     tempString = myQueue.Dequeue();
                     if (tempString != item)

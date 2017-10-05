@@ -1,4 +1,15 @@
-﻿using System;
+﻿/* Michael Anderson
+ * Josh Harris
+ * Josh Simpson
+ * Bryce Lefevre
+ * C# Data Structures
+ * 
+ * Updated 10/4/2017
+ */
+ 
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

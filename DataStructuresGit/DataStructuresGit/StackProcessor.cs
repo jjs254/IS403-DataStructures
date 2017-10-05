@@ -82,8 +82,8 @@ namespace DataStructuresGit
                         myOtherStack.Push(myStack.Pop());
                     }
                 }
-
-                for (int n = 0; n < myOtherStack.Count(); n++)//put back on myStack
+                counter = myOtherStack.Count();
+                for (int n = 0; n < counter; n++)//put back on myStack
                 {
                     myStack.Push(myOtherStack.Pop());
                 }
@@ -116,6 +116,7 @@ namespace DataStructuresGit
         public void clear()
         {
             myStack.Clear();
+            Console.WriteLine("Stack cleared.");
         }
 
         //search for item and return if it was found and the time elapsed
